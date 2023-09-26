@@ -1,0 +1,296 @@
+﻿@{
+    // ViewData["Title"] = "Home Page";
+}
+
+
+<div class="container">
+    <section id="home" style="padding-top:5%">
+        <div>
+            <div style="margin-top:11vh; text-align:center">
+                <h1 class="display-2">Welcome</h1>
+            </div>
+            <!-- Header section -->
+            <div class="header" style="margin-bottom: 0%">
+                <h1>I'm Bence</h1>
+                <p>a passionate software developer. I'm dedicated to delivering high-quality solutions and constantly improving my skills to stay on the cutting edge of technology.</p>
+
+            </div>
+        </div>
+        <div style="left:50%; position:absolute; z-index:1; margin-top:2%">
+            <a class="btn btn-success btn-lg" href="#about" style="font-size:2rem; position:relative; left:-50%; max-width:100%; height:auto">&nbsp; Get to know me &nbsp;</a>
+        </div>
+        
+            
+    </section>
+</div>
+
+<!-- Cloud Animation -->
+<div class="start_container">
+    <div class="scene">
+        <div class="moon"></div>
+        <img src="Images\empty.png" style="transform:scale(0.9); z-index:4; position:absolute; right:-60px;bottom:-20px; opacity:90%; max-width:30%; height:auto"/>
+    </div>
+    <script type="text/javascript">
+        function stars() {
+            let count = 600;
+            let scene = document.querySelector('.scene');
+            let i = 0;
+            while (i < count) {
+                let star = document.createElement("i");
+                let x = Math.floor(Math.random() * window.innerWidth);
+                let y = Math.floor(Math.random() * window.innerHeight);
+                let duration = Math.random() * 10;
+                let size = Math.random() * 3;
+
+                star.style.left = x + 'px';
+                star.style.top = y + 'px';
+                star.style.width = 1 + size + 'px';
+                star.style.height = 1 + size + 'px';
+
+                star.style.animationDuration = 5+duration + 's';
+                star.style.animationDelay = duration + 's';
+
+                scene.appendChild(star);
+                i++;
+            }
+        }
+        stars();
+    </script>
+</div>
+
+
+
+@* <div class="cloud">
+    <img src="Images\clouds.png" style="width:100%; height:100%" />
+</div> *@
+
+@* <div class="grad1">
+    
+    <img src="Images\guts_empty.jpg" style="width:100%; height:100%" />
+</div> *@
+
+<div class="container">
+    <hr />
+    <!-- Content section -->
+    <section id="about" style="padding-top:10%">
+        <div style="min-height:100vh; font-size:large">
+            <div class="content">
+                <h2>About Me</h2>
+                <p>Welcome to my portfolio. I'm Bence, a passionate software developer with a deep love for creating innovative solutions. With 1.5 years of experience in the industry, I have honed my skills in various areas of software development, including:</p>
+
+                <ul>
+                    <li>Game development with Unity</li>
+                    <li>Virtual Reality application develeopment with Godot graphic engine</li>
+                    <li>Image processing algorithm in Python</li>
+                    <li>Mobile app development for Android</li>
+                    <li>Fullstack develoment with .NET Core, ASP.NET Core</li>
+                    <li>Version control with Git</li>
+                </ul>
+
+                <p>I am dedicated to delivering high-quality solutions and thrive on tackling complex challenges. I stay up-to-date with the latest industry trends and technologies, ensuring that my work remains innovative and cutting-edge.</p>
+
+                <p>Throughout my career, I have had the privilege of working on a variety of projects, including a Virtual Reality application, eye and gaze tracking solutions, machine learning and image processing. Each project has added to my experience and allowed me to refine my problem-solving abilities.</p>
+
+                <p>Feel free to explore my portfolio to see some of my latest work. If you have a project or collaboration in mind, I'd love to hear from you. Let's connect and turn your ideas into reality.</p>
+                <a href="#contact" class="btn btn-primary" style="font-size:1.5rem"> <i class="bi bi-envelope" style="font-size:1.5rem"></i>&nbsp Contact Me</a>
+
+            </div>
+        </div>
+        <hr />
+    </section>
+
+    <!-- Content section -->
+    <section id="portfolio" style="padding-top:10%">
+        <div style="min-height:100vh">
+            <div class="content">
+                <h2>My portfolio</h2>
+
+                <!-- First row -->
+                <div class="row" style="z-index:-1">
+                    <div class="col-26">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem; min-height:22em">
+                            <div class="card-header">
+                                Virtual Reality
+                                <a href="https://github.com/BenceBiricz/VR-movement-tracking" target="_blank" class="btn btn-primary" style="float:right">
+                                    <i class="bi bi-github" style="font-size:2rem"></i>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Motion Tracking</h4>
+                                <img src="Images\vr.png" style="width:100%; height:200px; border-radius:10px; margin-top:5%"/>
+                                <p class="card-text">Godot plugin to track the users head and arm movement and it can measure VR Jitter.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-26">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem; min-height:22em">
+                            <div class="card-header">Virtual Reality
+                                <a href="https://github.com/BenceBiricz/VR_Eye_Gaze_Tracking" target="_blank" class="btn btn-primary" style="float:right">
+                                    <i class="bi bi-github" style="font-size:2rem"></i>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Eye/Gaze Tracking</h4>
+                                <img src="Images\eye.jpg" style="width:100%; height:200px; border-radius:10px; margin-top:5%" />
+                                <p class="card-text">Eye tracking and gaze tracking in virtual space. Images are in a python app.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-26">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem; min-height:22em">
+                            <div class="card-header">ASP .NET
+                                <a href="https://github.com/BenceBiricz/SmartPhoneTechAdvisor" target="_blank" class="btn btn-primary" style="float:right">
+                                    <i class="bi bi-github" style="font-size:2rem"></i>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Smart advisor</h4>
+                                <img src="Images\phone.png" style="width:100%; height:200px; border-radius:10px; margin-top:5%" "   />
+                                <p class="card-text">Basic WEB application for impementing OpenAi API to a webpage.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-26">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem; min-height:22em">
+                            <div class="card-header">Unity
+                                <a href="https://github.com/BenceBiricz/3D_game_Unity" target="_blank" class="btn btn-primary" style="float:right">
+                                    <i class="bi bi-github" style="font-size:2rem"></i>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">3D game</h4>
+                                <img src="Images\unity.png" style="width:100%; height:200px; border-radius:10px; margin-top:5%" "   />
+                                <p class="card-text">A 3D RPG game created in Unity called Hero's Journey.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second row -->
+                <div class="row">
+                    <div class="col-26">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem; min-height:22em">
+                            <div class="card-header">Python
+                                <a href="https://github.com/BenceBiricz/Medical_Instrument_Segmentation" target="_blank" class="btn btn-primary" style="float:right">
+                                    <i class="bi bi-github" style="font-size:2rem"></i>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Image Processing</h4>
+                                <img src="Images\segmentation.png" style="width:100%; height:200px; border-radius:10px; margin-top:5%" />
+                                <p class="card-text">Segmentation of surgical devices on Synthetic MICCAI dataset.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-26">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem; min-height:22em">
+                            <div class="card-header">C#
+                                <a href="https://github.com/BenceBiricz/Sobel_Edge_Detection" target="_blank" class="btn btn-primary" style="float:right">
+                                    <i class="bi bi-github" style="font-size:2rem"></i>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Edge Detection</h4>
+                                <img src="Images\sobel.jpg" style="width:100%; height:200px; border-radius:10px; margin-top:5%" />
+                                <p class="card-text">Sobel Edge detection algorithm created in C# with threading,</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-26">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem; min-height:22em">
+                            <div class="card-header">C#
+                                <a href="https://github.com/BenceBiricz/Emotion_Detection" target="_blank" class="btn btn-primary" style="float:right">
+                                    <i class="bi bi-github" style="font-size:2rem"></i>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Emotion Detection</h4>
+                                <img src="Images\emotion.png" style="width:100%; height:200px; border-radius:10px; margin-top:5%" />
+                                <p class="card-text">The task is to detect and recognise the emotions of the human face.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <hr />
+    </section>
+
+    <!-- Content section -->
+    <section id="contact" style="padding-top:10%; max-width:100%; height:auto">
+        <div style="min-height:80vh">
+            <div class="content">
+                <h2>Contact</h2>
+                <div class="row text-lg-center">
+                    <div class="col-3">
+                        <a href="https://www.linkedin.com/in/bence-biricz/" target="_blank" class="btn btn-light btn-lg" style="background-color:#fffafa">
+                            <i class="bi bi-linkedin" style="font-size:6rem"></i>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://github.com/BenceBiricz" target="_blank" class="btn btn-light btn-lg" style="background-color:#fffafa">
+                            <i class="bi bi-github" style="font-size:6rem"></i>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="mailto:biriczbence@gmail.com" class="btn btn-light btn-lg" style="background-color:#fffafa">
+                            <i class="bi bi-envelope-at-fill" style="font-size:6rem"></i>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://www.facebook.com/bence.biricz/" target="_blank" class="btn btn-light btn-lg" style="background-color:#fffafa">
+                            <i class="bi bi-facebook" style="font-size:6rem"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <hr />
+                <p>&nbsp;</p>
+                <div class="text-lg-center">
+                    <h2 class="display-4">Contact me directly</h2>
+                    <label class="form-label mt-4">Email address:</label>
+                    <div>
+                        <label class="form-label mt-4" style="user-select:text !important; font-weight:900">biriczbence@gmail.com</label>
+                    </div>
+                    
+                </div>
+
+                <div id="bottomButton" class="hidden" style="float:right; margin-top:8%">
+                    <a href="#home" class="btn btn-light btn-lg" style="background-color:#fffafa">
+                        <i class="bi bi-chevron-double-up" style="font-size:6rem"></i>
+                    </a>
+                </div>
+
+                @* <form>
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="background-color:lightgrey">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleTextarea" class="form-label mt-4">Text</label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3" style="background-color:lightgrey"></textarea>
+                        </div>
+
+                        <div class="text-lg-center">
+                            <button type="submit" class="btn btn-primary" style="margin-top:3%; padding-right:10%; padding-left:10%; font-size:1.5rem">Submit</button>
+                        </div>
+
+                    </fieldset>
+                </form> *@
+
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
