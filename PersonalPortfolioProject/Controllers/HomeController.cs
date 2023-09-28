@@ -12,6 +12,15 @@ namespace PersonalPortfolioProject.Controllers
             new PortfolioViewModel()
             {
                 Id = 1,
+                CardHeader = "ASP .NET",
+                CardTitle  = "Personal Portfolio",
+                ImgPath = "Images\\portfolio.png",
+                CardText = "This website was created in ASP .NET Core, and showcases my skills.",
+                GitHubLink = "https://github.com/BenceBiricz/PersonalPortfolio",
+            },
+            new PortfolioViewModel()
+            {
+                Id = 2,
                 CardHeader = "VR",
                 CardTitle  = "Motion Tracking",
                 ImgPath = "Images\\vr.png",
@@ -20,7 +29,7 @@ namespace PersonalPortfolioProject.Controllers
             },
             new PortfolioViewModel()
             {
-                Id = 2,
+                Id = 3,
                 CardHeader = "VR",
                 CardTitle  = "Eye/Gaze Tracking",
                 ImgPath = "Images\\eye.jpg",
@@ -29,7 +38,7 @@ namespace PersonalPortfolioProject.Controllers
             },
             new PortfolioViewModel()
             {
-                Id = 3,
+                Id = 4,
                 CardHeader = "ASP .NET",
                 CardTitle  = "Smart advisor",
                 ImgPath = "Images\\phone.png",
@@ -38,7 +47,7 @@ namespace PersonalPortfolioProject.Controllers
             },
             new PortfolioViewModel()
             {
-                Id = 4,
+                Id = 5,
                 CardHeader = "Unity",
                 CardTitle  = "3D RPG Game Dev",
                 ImgPath = "Images\\unity.png",
@@ -47,7 +56,7 @@ namespace PersonalPortfolioProject.Controllers
             },
             new PortfolioViewModel()
             {
-                Id = 5,
+                Id = 6,
                 CardHeader = "Python",
                 CardTitle  = "Image Processing",
                 ImgPath = "Images\\segmentation.png",
@@ -56,7 +65,7 @@ namespace PersonalPortfolioProject.Controllers
             },
             new PortfolioViewModel()
             {
-                Id = 6,
+                Id = 7,
                 CardHeader = "C#",
                 CardTitle  = "Edge Detection",
                 ImgPath = "Images\\sobel.jpg",
@@ -65,7 +74,7 @@ namespace PersonalPortfolioProject.Controllers
             },
             new PortfolioViewModel()
             {
-                Id = 7,
+                Id = 8,
                 CardHeader = "C#",
                 CardTitle  = "Emotion Detection",
                 ImgPath = "Images\\emotion.png",
